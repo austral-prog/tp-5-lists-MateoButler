@@ -11,8 +11,10 @@ def remove_elements(lista):
     Returns:
         La lista después de remover los elementos indicados
     """
-    lista.pop(5)
-    lista.pop(4)
-    lista.pop(0)
+    resultado = lista[1:]
 
-    return lista
+    # Ahora eliminamos posiciones 4 y 5 (originales)
+    # En la nueva lista corresponden a índices 3 y 4
+    resultado = resultado[:3] + resultado[5:]
+
+    return resultado

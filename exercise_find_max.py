@@ -11,7 +11,12 @@ def find_max(lista):
     Returns:
         El valor máximo de la lista o None si está vacía
     """
-    if len(lista) != 0:
-        return max(lista)
-    else:
+    if len(lista) == 0:
         return None
+    else:
+        maximo=max(lista)
+        """maximo = lista[0]
+        for numero in lista:
+            if numero > maximo:
+                maximo = numero"""
+        return maximo

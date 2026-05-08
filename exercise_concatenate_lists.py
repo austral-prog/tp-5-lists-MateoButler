@@ -11,6 +11,4 @@ def concatenate_lists(lista1, lista2):
     Returns:
         Una nueva lista con todos los elementos de lista1 seguidos de lista2
     """
-    superlista = lista1 + lista2
-
-    return superlista
+    return lista1 + lista2
